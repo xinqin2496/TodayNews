@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstLaunchController" customModule="Swift3_0Test" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Vhn-Yu-tpg" id="ILQ-7I-aKk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Vhn-Yu-tpg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_Introduce_explore_320x164_" translatesAutoresizingMaskIntoConstraints="NO" id="ivp-1H-B2N">
+                    <rect key="frame" x="27.5" y="64" width="320" height="164"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="FDs-gQ-pfU"/>
+                        <constraint firstAttribute="height" constant="164" id="WFI-mt-v9b"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-oT-UZj">
+                    <rect key="frame" x="129" y="625" width="117" height="22"/>
+                    <state key="normal" image="title_Introduce_117x13_">
+                        <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="enterButtonClick:" destination="-1" eventType="touchUpInside" id="5xw-V9-Ymc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHv-sk-v3T">
+                    <rect key="frame" x="95.5" y="550" width="184" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="Yj1-yv-6Vv"/>
+                        <constraint firstAttribute="height" constant="35" id="kG0-iW-YNp"/>
+                    </constraints>
+                    <state key="normal" image="first_sinabutton_Introduce_247x47_"/>
+                    <connections>
+                        <action selector="weiboButtonClick:" destination="-1" eventType="touchUpInside" id="Kl5-s6-rax"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWb-3m-oKx">
+                    <rect key="frame" x="95.5" y="505" width="184" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="G8b-3H-f7H"/>
+                        <constraint firstAttribute="height" constant="35" id="c5g-v4-EcM"/>
+                    </constraints>
+                    <state key="normal" image="first_qqbutton_Introduce_247x47_"/>
+                    <connections>
+                        <action selector="QQButtonClick:" destination="-1" eventType="touchUpInside" id="V03-uw-8Ub"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OG-Fz-za0">
+                    <rect key="frame" x="95.5" y="460" width="184" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="00T-ch-OYL"/>
+                        <constraint firstAttribute="width" constant="184" id="pl4-bq-U6V"/>
+                    </constraints>
+                    <state key="normal" image="first_weixinbutton_Introduce_247x47_"/>
+                    <connections>
+                        <action selector="wechatButtonClick:" destination="-1" eventType="touchUpInside" id="MIx-A5-NPj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiB-PG-Yk4">
+                    <rect key="frame" x="95.5" y="415" width="184" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="3bX-uP-Ber"/>
+                        <constraint firstAttribute="height" constant="35" id="ALE-oC-PA2"/>
+                    </constraints>
+                    <state key="normal" image="cellphonebutton_Introduce_184x35_"/>
+                    <connections>
+                        <action selector="mobileButtonClick:" destination="-1" eventType="touchUpInside" id="sjg-na-8gx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BHv-sk-v3T" firstAttribute="centerX" secondItem="Vhn-Yu-tpg" secondAttribute="centerX" id="065-WO-5Fw"/>
+                <constraint firstAttribute="bottom" secondItem="kFq-oT-UZj" secondAttribute="bottom" constant="20" id="HGw-98-N6O"/>
+                <constraint firstItem="kFq-oT-UZj" firstAttribute="centerX" secondItem="Vhn-Yu-tpg" secondAttribute="centerX" id="MbN-DG-pYq"/>
+                <constraint firstItem="ivp-1H-B2N" firstAttribute="top" secondItem="Vhn-Yu-tpg" secondAttribute="top" constant="64" id="Tae-7c-Shz"/>
+                <constraint firstItem="BHv-sk-v3T" firstAttribute="top" secondItem="AWb-3m-oKx" secondAttribute="bottom" constant="10" id="Vxy-KB-chz"/>
+                <constraint firstItem="0OG-Fz-za0" firstAttribute="centerX" secondItem="AWb-3m-oKx" secondAttribute="centerX" id="ewc-ey-Lwx"/>
+                <constraint firstItem="AWb-3m-oKx" firstAttribute="top" secondItem="0OG-Fz-za0" secondAttribute="bottom" constant="10" id="lDE-qS-0dL"/>
+                <constraint firstItem="0OG-Fz-za0" firstAttribute="top" secondItem="fiB-PG-Yk4" secondAttribute="bottom" constant="10" id="oNp-Ny-RDG"/>
+                <constraint firstItem="fiB-PG-Yk4" firstAttribute="centerX" secondItem="0OG-Fz-za0" secondAttribute="centerX" id="p6b-2o-bWB"/>
+                <constraint firstItem="AWb-3m-oKx" firstAttribute="centerX" secondItem="BHv-sk-v3T" secondAttribute="centerX" id="yuH-Z5-hBH"/>
+                <constraint firstItem="ivp-1H-B2N" firstAttribute="centerX" secondItem="Vhn-Yu-tpg" secondAttribute="centerX" id="zYs-Wd-eHq"/>
+                <constraint firstItem="kFq-oT-UZj" firstAttribute="top" secondItem="BHv-sk-v3T" secondAttribute="bottom" constant="40" id="zge-2z-jHu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_Introduce_explore_320x164_" width="320" height="164"/>
+        <image name="cellphonebutton_Introduce_184x35_" width="184" height="35"/>
+        <image name="first_qqbutton_Introduce_247x47_" width="247" height="47"/>
+        <image name="first_sinabutton_Introduce_247x47_" width="247" height="47"/>
+        <image name="first_weixinbutton_Introduce_247x47_" width="247" height="47"/>
+        <image name="title_Introduce_117x13_" width="117" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="HomeJokesCell" customModule="Swift3_0Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-Cc-GId">
+                        <rect key="frame" x="0.0" y="0.0" width="367" height="151.5"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upP-mN-EVV">
+                                <rect key="frame" x="15" y="10" width="337" height="141.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7h4-21-bbD">
+                                <rect key="frame" x="15" y="10" width="337" height="132"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="upP-mN-EVV" firstAttribute="top" secondItem="mGa-Cc-GId" secondAttribute="top" constant="10" id="DNy-Ug-hnR"/>
+                            <constraint firstItem="7h4-21-bbD" firstAttribute="top" secondItem="mGa-Cc-GId" secondAttribute="top" constant="10" id="KCU-1C-rPL"/>
+                            <constraint firstItem="upP-mN-EVV" firstAttribute="leading" secondItem="mGa-Cc-GId" secondAttribute="leading" constant="15" id="Mug-Wp-bgf"/>
+                            <constraint firstItem="7h4-21-bbD" firstAttribute="leading" secondItem="mGa-Cc-GId" secondAttribute="leading" constant="15" id="O5U-Az-1xx"/>
+                            <constraint firstAttribute="bottom" secondItem="upP-mN-EVV" secondAttribute="bottom" id="cCE-L1-ZT4"/>
+                            <constraint firstAttribute="trailing" secondItem="7h4-21-bbD" secondAttribute="trailing" constant="15" id="jJ9-4Y-xVl"/>
+                            <constraint firstAttribute="bottom" secondItem="7h4-21-bbD" secondAttribute="bottom" constant="10" id="jtB-jY-7nY"/>
+                            <constraint firstAttribute="trailing" secondItem="upP-mN-EVV" secondAttribute="trailing" constant="15" id="tom-xf-Mu2"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hl-hw-LZn">
+                        <rect key="frame" x="0.0" y="151.5" width="367" height="40"/>
+                        <subviews>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caf-NS-tES">
+                                <rect key="frame" x="90" y="10" width="70" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="h0K-Dh-5i4"/>
+                                    <constraint firstAttribute="height" constant="25" id="xvP-vg-GYe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="12" image="good_jokebar_textpage_24x24_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="good_jokebar_textpage_selected_24x24_">
+                                    <color key="titleColor" red="1" green="0.1934451811" blue="0.1013346807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" image="good_jokebar_textpage_selected_press_24x24_"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gXh-Ud-JH6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAm-nr-wpm">
+                                <rect key="frame" x="165" y="10" width="70" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="jVo-IX-bcL"/>
+                                    <constraint firstAttribute="height" constant="25" id="y2Z-en-JZx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="30" image="new_review_tabbar_22x22_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WYb-Iv-MdK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="113" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHc-2k-BZG">
+                                <rect key="frame" x="327" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="3pn-AY-Mu5"/>
+                                    <constraint firstAttribute="width" constant="25" id="WgH-YA-IBh"/>
+                                </constraints>
+                                <state key="normal" image="new_share_tabbar_22x22_"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7tK-sG-HES"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="114" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUu-Xd-2mc">
+                                <rect key="frame" x="287" y="10" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="1W4-v8-bkE"/>
+                                    <constraint firstAttribute="height" constant="25" id="MNb-pv-CqQ"/>
+                                </constraints>
+                                <state key="normal" image="ugc_icon_collect_20x20_"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8lV-ME-YD3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P52-GS-uPL">
+                                <rect key="frame" x="15" y="10" width="70" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Qa7-cF-khe"/>
+                                    <constraint firstAttribute="width" constant="70" id="WXP-4B-OE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="-15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="24" image="bad_jokebar_textpage_24x24_">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="bad_jokebar_textpage_selected_24x24_">
+                                    <color key="titleColor" red="1" green="0.1934451811" blue="0.1013346807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" image="bad_jokebar_textpage_selected_press_24x24_"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iyh-Nr-HsT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P52-GS-uPL" secondAttribute="bottom" constant="5" id="32p-1V-Wg4"/>
+                            <constraint firstItem="Caf-NS-tES" firstAttribute="leading" secondItem="P52-GS-uPL" secondAttribute="trailing" constant="5" id="Emf-2E-ZoE"/>
+                            <constraint firstItem="RHc-2k-BZG" firstAttribute="leading" secondItem="EUu-Xd-2mc" secondAttribute="trailing" constant="15" id="GTT-br-sKD"/>
+                            <constraint firstAttribute="trailing" secondItem="RHc-2k-BZG" secondAttribute="trailing" constant="15" id="Pet-iz-5N9"/>
+                            <constraint firstItem="P52-GS-uPL" firstAttribute="leading" secondItem="2hl-hw-LZn" secondAttribute="leading" constant="15" id="QmF-mk-WiH"/>
+                            <constraint firstAttribute="height" constant="40" id="YR6-Tj-8e9"/>
+                            <constraint firstAttribute="bottom" secondItem="RHc-2k-BZG" secondAttribute="bottom" constant="5" id="bPe-c8-4L3"/>
+                            <constraint firstAttribute="bottom" secondItem="Caf-NS-tES" secondAttribute="bottom" constant="5" id="f3U-Ku-YXi"/>
+                            <constraint firstAttribute="bottom" secondItem="sAm-nr-wpm" secondAttribute="bottom" constant="5" id="iPS-Vl-3oH"/>
+                            <constraint firstItem="sAm-nr-wpm" firstAttribute="leading" secondItem="Caf-NS-tES" secondAttribute="trailing" constant="5" id="unR-dd-PIE"/>
+                            <constraint firstAttribute="bottom" secondItem="EUu-Xd-2mc" secondAttribute="bottom" constant="5" id="zQm-lK-snW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="2hl-hw-LZn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Xw-pg-wWy"/>
+                    <constraint firstAttribute="trailing" secondItem="2hl-hw-LZn" secondAttribute="trailing" id="5LG-LO-HTS"/>
+                    <constraint firstItem="mGa-Cc-GId" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KXS-8g-3WO"/>
+                    <constraint firstAttribute="bottom" secondItem="2hl-hw-LZn" secondAttribute="bottom" constant="8" id="Kgq-G8-w7d"/>
+                    <constraint firstItem="mGa-Cc-GId" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tvb-Sg-3N3"/>
+                    <constraint firstAttribute="trailing" secondItem="mGa-Cc-GId" secondAttribute="trailing" id="W9t-yg-dNN"/>
+                    <constraint firstItem="2hl-hw-LZn" firstAttribute="top" secondItem="mGa-Cc-GId" secondAttribute="bottom" id="rLU-0U-ZDj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="badBtn" destination="P52-GS-uPL" id="dxY-EP-egT"/>
+                <outlet property="bottomView" destination="2hl-hw-LZn" id="eAL-bf-6a2"/>
+                <outlet property="commentBtn" destination="sAm-nr-wpm" id="qzt-Qk-YxG"/>
+                <outlet property="contentLabel" destination="upP-mN-EVV" id="0hG-hY-dOR"/>
+                <outlet property="goodBtn" destination="Caf-NS-tES" id="7rz-s6-8Da"/>
+                <outlet property="jokesView" destination="mGa-Cc-GId" id="4NE-UL-uqs"/>
+                <outlet property="picImageView" destination="7h4-21-bbD" id="9Vw-fF-sqe"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="130"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bad_jokebar_textpage_24x24_" width="24" height="24"/>
+        <image name="bad_jokebar_textpage_selected_24x24_" width="24" height="24"/>
+        <image name="bad_jokebar_textpage_selected_press_24x24_" width="24" height="24"/>
+        <image name="good_jokebar_textpage_24x24_" width="24" height="24"/>
+        <image name="good_jokebar_textpage_selected_24x24_" width="24" height="24"/>
+        <image name="good_jokebar_textpage_selected_press_24x24_" width="24" height="24"/>
+        <image name="new_review_tabbar_22x22_" width="22" height="22"/>
+        <image name="new_share_tabbar_22x22_" width="22" height="22"/>
+        <image name="ugc_icon_collect_20x20_" width="20" height="20"/>
+    </resources>
+</document>
